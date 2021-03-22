@@ -15,9 +15,8 @@ namespace Calculator
                 int second_number = Convert.ToInt32(Console.ReadLine());
                 Console.Write("Введите действие над числами(+,-,*,/): ");
                 string  action = Console.ReadLine();
-                
                 int result = 0;
-                
+
                 if (action == "+")
                 {
                     result = first_number + second_number;
