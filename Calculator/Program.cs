@@ -7,6 +7,7 @@ namespace Calculator
         static void Main(string[] args)
         {
             int count = 1;
+            
             while (count == 1) 
             {             
                 Console.Write("Введите первое число:                  ");
