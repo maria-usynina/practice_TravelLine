@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityModelLib", "UniversityModelLib\UniversityModelLib.csproj", "{D9F2E802-7AF5-47C8-AE1B-CF9C7FA353F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityModel", "UniversityModel\UniversityModel.csproj", "{55663299-C7B2-4BAF-A74D-2B02D541104B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9F2E802-7AF5-47C8-AE1B-CF9C7FA353F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F2E802-7AF5-47C8-AE1B-CF9C7FA353F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F2E802-7AF5-47C8-AE1B-CF9C7FA353F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F2E802-7AF5-47C8-AE1B-CF9C7FA353F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55663299-C7B2-4BAF-A74D-2B02D541104B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55663299-C7B2-4BAF-A74D-2B02D541104B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55663299-C7B2-4BAF-A74D-2B02D541104B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55663299-C7B2-4BAF-A74D-2B02D541104B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97F9A51C-9B53-47B6-A3E4-B6AC00A4CC4C}
+	EndGlobalSection
+EndGlobal
