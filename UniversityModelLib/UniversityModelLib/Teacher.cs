@@ -8,17 +8,17 @@ namespace UniversityModelLib
 {
     public class Teacher : ITeacher
     {
-        private string _teacher;
+        private string teacherName;
 
         public Teacher()
         {
         }
 
-        public Teacher(string v)
+        public Teacher(string name)
         {
-            _teacher = v;
+            teacherName = name;
         }
 
-        public string Name { get => _teacher; set => _teacher = value; }
+        public string Name { get => teacherName; set => teacherName = value; }
     }
 }

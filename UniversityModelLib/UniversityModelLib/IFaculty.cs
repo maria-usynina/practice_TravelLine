@@ -9,9 +9,11 @@ namespace UniversityModelLib
     public interface IFaculty
     {
         string Name { get; set; }
-        void AddStudent(string _student);
-        void DeleteStudent(string _student);
-        void AddTeacher(string _teacher);
-        void DeleteTeacher(string _teacher);
+        void WriteAllStudents();
+        void AddStudent();
+        void DeleteStudent();
+        void WriteAllTeachers();
+        void AddTeacher();
+        void DeleteTeacher();
     }
 }

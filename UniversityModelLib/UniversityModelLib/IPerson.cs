@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace UniversityModelLib
 {
-    public interface IUniversity
+    public interface IPerson
     {
-        void WriteAllFaculties();
-        void AddFaculty();
-        void DeleteFaculty();
-        void ChooseFaculty();
+        void Student();
+        void Teacher();
     }
 }

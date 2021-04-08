@@ -8,52 +8,72 @@ namespace UniversityModelLib
 {
     public class Faculty : IFaculty
     {
-        private string faculty_name;
-
-        public Faculty()
+        private string facultyName;
+        public Faculty(string name)
         {
+            facultyName = name;
         }
 
-        public Faculty(string v)
-        {
-            faculty_name = v;
-        }
-
-        public string Name { get => faculty_name; set => faculty_name = value; }
-
+        public string Name { get => facultyName; set => facultyName = value; }
         public List<IStudent> students = new List<IStudent>();
-        public void AddStudent(string _student)
+        public List<ITeacher> teachers = new List<ITeacher>();
+        public void WriteAllStudents()
         {
+            foreach (Student i in students)
+            {
+                Console.WriteLine("                                                                    " + i.Name);
+            }
+        }
+        public void AddStudent()
+        {
+            Console.Write("Введите студента(ФИО полностью):                                  ");
+            string studentName = Console.ReadLine();
             Student student = new Student();
-            student.Name = _student;
+            student.Name = studentName;
             students.Add(student);
         }
-        public void DeleteStudent(string _student)
+        public void DeleteStudent()
         {
-            for (int j = 0; j < students.Count; j++)
+            Console.Write("Введите студента(ФИО полностью):                                  ");
+            string studentName = Console.ReadLine();
+            Student name = new Student("");
+            foreach (Student i in students)
             {
-                if (students[j].Name == _student)
+                if (i.Name == studentName)
                 {
-                    students.RemoveAt(j);
+                    name = i;
                 }
             }
+            students.Remove((IStudent)name);
         }
-        public List<ITeacher> teachers = new List<ITeacher>();
-        public void AddTeacher(string _teacher)
+        public void WriteAllTeachers()
         {
+            foreach (Teacher i in teachers)
+            {
+                Console.WriteLine("                                                                    " + i.Name);
+            }
+        }
+        public void AddTeacher()
+        {
+            Console.Write("Введите преподавателя(ФИО полностью):                             ");
+            string teacherName = Console.ReadLine();
             Teacher teacher = new Teacher();
-            teacher.Name = _teacher;
+            teacher.Name = teacherName;
             teachers.Add(teacher);
         }
-        public void DeleteTeacher(string _teacher)
+        public void DeleteTeacher()
         {
-            for (int j = 0; j < teachers.Count; j++)
+            Console.Write("Введите преподавателя(ФИО полностью):                             ");
+            string teacherName = Console.ReadLine();
+            Teacher name = new Teacher("");
+            foreach (Teacher i in teachers)
             {
-                if (teachers[j].Name == _teacher)
+                if (i.Name == teacherName)
                 {
-                    teachers.RemoveAt(j);
+                    name = i;
                 }
             }
+            teachers.Remove((ITeacher)name);
         }
     }
 }
