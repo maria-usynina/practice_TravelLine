@@ -28,8 +28,7 @@ namespace UniversityModelLib
         {
             Console.Write("Введите студента(ФИО полностью):                                  ");
             string studentName = Console.ReadLine();
-            Student student = new Student();
-            student.Name = studentName;
+            Student student = new Student(studentName);
             students.Add(student);
         }
         public void DeleteStudent()
@@ -57,8 +56,7 @@ namespace UniversityModelLib
         {
             Console.Write("Введите преподавателя(ФИО полностью):                             ");
             string teacherName = Console.ReadLine();
-            Teacher teacher = new Teacher();
-            teacher.Name = teacherName;
+            Teacher teacher = new Teacher(teacherName);
             teachers.Add(teacher);
         }
         public void DeleteTeacher()
