@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ShopConsole": {
+      "commandName": "Project",
+      "commandLineArgs": "statistic"
+    }
+  }
+}
