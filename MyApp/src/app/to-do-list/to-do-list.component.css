@@ -1,0 +1,16 @@
+:host
+{
+  display: block;
+  padding: 30px;
+}
+
+.addButton
+{
+  margin-left: 10px;
+}
+
+.active
+{
+  text-decoration: line-through;
+  color: aquamarine;
+}
