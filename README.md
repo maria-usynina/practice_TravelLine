@@ -6,4 +6,6 @@
 
 3. ShopConsole - использование БД (на примере магазина) 
 
-4. MyApp - frontend проект ToDo
+4. MyApp - frontend проект ToDo (Angluar)
+ 
+5. WebApp - frontend проект ToDo (Angluar + WebAPI + SQL)  
